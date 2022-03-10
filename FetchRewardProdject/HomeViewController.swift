@@ -8,22 +8,47 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    @IBOutlet weak var categoryCollectionView: UICollectionView!
+    
+    var categories: [MealCategory] = [
+        .init(id: "id1", name: "Chicken", image: UIImage(named: "chicken")!),
+        .init(id: "id1", name: "Chicken", image: UIImage(named: "chicken")!),
+        .init(id: "id1", name: "Chicken", image: UIImage(named: "chicken")!),
+        .init(id: "id1", name: "Chicken", image: UIImage(named: "chicken")!),
+        .init(id: "id1", name: "Chicken", image: UIImage(named: "chicken")!),
+        .init(id: "id1", name: "Chicken", image: UIImage(named: "chicken")!),
+        .init(id: "id1", name: "Chicken", image: UIImage(named: "chicken")!),
+        .init(id: "id1", name: "Chicken", image: UIImage(named: "chicken")!),
+        .init(id: "id1", name: "Chicken", image: UIImage(named: "chicken")!),
+        .init(id: "id1", name: "Chicken", image: UIImage(named: "chicken")!),
+        .init(id: "id1", name: "Chicken", image: UIImage(named: "chicken")!),
+        .init(id: "id1", name: "Chicken", image: UIImage(named: "chicken")!),
+    ]
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+registerCells()
+    }
+    
+    private func registerCells() {
+        categoryCollectionView.register(UINib(nibName: CategoryCell.identifier, bundle: nil), forCellWithReuseIdentifier: CategoryCell.identifier)
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }
+
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return categories.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCell.identifier, for: indexPath) as! CategoryCell
+        cell.setup(category: categories[indexPath.row])
+        return cell
+        
+    }
+    
+    
+}
+
