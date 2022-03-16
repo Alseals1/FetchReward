@@ -1,7 +1,8 @@
 import Foundation
 import UIKit
 
-struct MealCategory {
+struct Meal {
     let id, name: String
     let image: UIImage
 }
+

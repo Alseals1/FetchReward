@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6093E4227E22A4200F5028D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6093E4127E22A4200F5028D /* CardView.swift */; };
+		C6093E4827E22D3A00F5028D /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6093E4727E22D3A00F5028D /* Meal.swift */; };
+		C6093E4B27E2338F00F5028D /* MealsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6093E4927E2338F00F5028D /* MealsCell.swift */; };
+		C6093E4C27E2338F00F5028D /* MealsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6093E4A27E2338F00F5028D /* MealsCell.xib */; };
 		C628A42E27DA3FF10033A2A5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C628A42D27DA3FF10033A2A5 /* HomeViewController.swift */; };
 		C628A43427DA42810033A2A5 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C628A43227DA42810033A2A5 /* CategoryCell.swift */; };
 		C628A43527DA42810033A2A5 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C628A43327DA42810033A2A5 /* CategoryCell.xib */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C6093E4127E22A4200F5028D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		C6093E4727E22D3A00F5028D /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		C6093E4927E2338F00F5028D /* MealsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsCell.swift; sourceTree = "<group>"; };
+		C6093E4A27E2338F00F5028D /* MealsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealsCell.xib; sourceTree = "<group>"; };
 		C628A42D27DA3FF10033A2A5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C628A43227DA42810033A2A5 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		C628A43327DA42810033A2A5 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
@@ -43,10 +51,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C6093E4027E22A2A00F5028D /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				C6093E4127E22A4200F5028D /* CardView.swift */,
+				C628A43027DA42040033A2A5 /* ColletionViewCells */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
 		C628A42F27DA41FB0033A2A5 /* Customs */ = {
 			isa = PBXGroup;
 			children = (
-				C628A43027DA42040033A2A5 /* ColletionViewCells */,
+				C6093E4027E22A2A00F5028D /* CardView */,
 			);
 			path = Customs;
 			sourceTree = "<group>";
@@ -55,6 +72,8 @@
 			isa = PBXGroup;
 			children = (
 				C628A43127DA42240033A2A5 /* CategoryCollectionViewCells */,
+				C6093E4927E2338F00F5028D /* MealsCell.swift */,
+				C6093E4A27E2338F00F5028D /* MealsCell.xib */,
 			);
 			path = ColletionViewCells;
 			sourceTree = "<group>";
@@ -72,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				C628A43727DA43380033A2A5 /* MealCategory.swift */,
+				C6093E4727E22D3A00F5028D /* Meal.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -166,6 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6093E4C27E2338F00F5028D /* MealsCell.xib in Resources */,
 				C6FE26CA27D7BE3C005EE7BF /* LaunchScreen.storyboard in Resources */,
 				C6FE26C727D7BE3C005EE7BF /* Assets.xcassets in Resources */,
 				C6FE26C527D7BE3C005EE7BF /* Main.storyboard in Resources */,
@@ -180,10 +201,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6093E4827E22D3A00F5028D /* Meal.swift in Sources */,
 				C6FE26BE27D7BE3C005EE7BF /* AppDelegate.swift in Sources */,
 				C6FE26C027D7BE3C005EE7BF /* SceneDelegate.swift in Sources */,
 				C628A43827DA43380033A2A5 /* MealCategory.swift in Sources */,
+				C6093E4B27E2338F00F5028D /* MealsCell.swift in Sources */,
 				C628A42E27DA3FF10033A2A5 /* HomeViewController.swift in Sources */,
+				C6093E4227E22A4200F5028D /* CardView.swift in Sources */,
 				C628A43427DA42810033A2A5 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
