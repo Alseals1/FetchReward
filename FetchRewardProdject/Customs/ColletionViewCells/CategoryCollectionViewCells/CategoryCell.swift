@@ -13,7 +13,7 @@ class CategoryCell: UICollectionViewCell {
     
     func setup(category: MealCategory) {
         categoryView.layer.cornerRadius = 25
-        categoryView.backgroundColor = .lightGray
+        categoryView.backgroundColor = .quaternarySystemFill
         CategoryTitleLbl.text = category.name
     }
 
