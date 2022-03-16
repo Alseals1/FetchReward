@@ -3,7 +3,7 @@ import UIKit
 class CategoryCell: UICollectionViewCell {
     static let identifier = String(describing: CategoryCell.self)
     
-    @IBOutlet weak var categoryImageView: UIImageView!
+    @IBOutlet weak var categoryView: UIView!
     
     @IBOutlet weak var CategoryTitleLbl: UILabel!
     override func awakeFromNib() {
@@ -12,8 +12,9 @@ class CategoryCell: UICollectionViewCell {
     }
     
     func setup(category: MealCategory) {
+        categoryView.layer.cornerRadius = 25
+        categoryView.backgroundColor = .lightGray
         CategoryTitleLbl.text = category.name
-        categoryImageView.image = category.image
     }
 
 }

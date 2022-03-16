@@ -71,9 +71,8 @@
 		C628A43027DA42040033A2A5 /* ColletionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				C69A75ED27E23A8800CCAC69 /* MealsCollectionViewCells */,
 				C628A43127DA42240033A2A5 /* CategoryCollectionViewCells */,
-				C6093E4927E2338F00F5028D /* MealsCell.swift */,
-				C6093E4A27E2338F00F5028D /* MealsCell.xib */,
 			);
 			path = ColletionViewCells;
 			sourceTree = "<group>";
@@ -94,6 +93,15 @@
 				C6093E4727E22D3A00F5028D /* Meal.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C69A75ED27E23A8800CCAC69 /* MealsCollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				C6093E4927E2338F00F5028D /* MealsCell.swift */,
+				C6093E4A27E2338F00F5028D /* MealsCell.xib */,
+			);
+			path = MealsCollectionViewCells;
 			sourceTree = "<group>";
 		};
 		C6FE26B127D7BE3C005EE7BF = {

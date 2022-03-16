@@ -13,18 +13,13 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var mealCollectionView: UICollectionView!
     
     var categories: [MealCategory] = [
-        .init(id: "id1", name: "Chicken", image: UIImage(named: "chicken")!),
-        .init(id: "id2", name: "Seafood", image: UIImage(named: "chicken")!),
-        .init(id: "id3", name: "Beef", image: UIImage(named: "chicken")!),
-        .init(id: "id4", name: "Vegan", image: UIImage(named: "chicken")!),
-        .init(id: "id5", name: "Milkshakes", image: UIImage(named: "chicken")!),
-        .init(id: "id6", name: "Icecream", image: UIImage(named: "chicken")!),
-        .init(id: "id7", name: "Chicken", image: UIImage(named: "chicken")!),
-        .init(id: "id8", name: "Chicken", image: UIImage(named: "chicken")!),
-        .init(id: "id9", name: "Chicken", image: UIImage(named: "chicken")!),
-        .init(id: "id10", name: "Chicken", image: UIImage(named: "chicken")!),
-        .init(id: "id11", name: "Chicken", image: UIImage(named: "chicken")!),
-        .init(id: "id12", name: "Chicken", image: UIImage(named: "chicken")!),
+        .init(id: "id1", name: "Chicken"),
+        .init(id: "id2", name: "Seafood"),
+        .init(id: "id3", name: "Beef"),
+        .init(id: "id4", name: "Vegan"),
+        .init(id: "id5", name: "Milkshakes"),
+        .init(id: "id6", name: "Icecream"),
+        .init(id: "id7", name: "Chicken")
     ]
     
     var meals: [Meal] = [

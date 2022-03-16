@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="160" height="500"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v1c-Ak-Cf8" customClass="CardView" customModule="FetchRewardProdject" customModuleProvider="target">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v1c-Ak-Cf8">
                         <rect key="frame" x="0.0" y="0.0" width="160" height="500"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="equalSpacing" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="5au-r8-VnX">
