@@ -1,15 +1,7 @@
-//
-//  HomeViewController.swift
-//  FetchRewardProdject
-//
-//  Created by Alandis Seals on 3/10/22.
-//
-
 import UIKit
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var categoryCollectionView: UICollectionView!
-    
     @IBOutlet weak var mealCollectionView: UICollectionView!
     
     var categories: [MealCategory] = [
@@ -21,25 +13,22 @@ class HomeViewController: UIViewController {
         .init(id: "id6", name: "Icecream"),
         .init(id: "id7", name: "Chicken")
     ]
-    
     var meals: [Meal] = [
         .init(id: "id1", name: "Tacos", image: UIImage(named: "chicken")!),
         .init(id: "id2", name: "Chicken", image: UIImage(named: "chicken")!),
         .init(id: "id3", name: "Chicken", image: UIImage(named: "chicken")!),
         .init(id: "id4", name: "Chicken", image: UIImage(named: "chicken")!)
     ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-registerCells()
+        registerCells()
     }
     
     private func registerCells() {
         categoryCollectionView.register(UINib(nibName: CategoryCell.identifier, bundle: nil), forCellWithReuseIdentifier: CategoryCell.identifier)
         mealCollectionView.register(UINib(nibName: MealsCell.identifier, bundle: nil), forCellWithReuseIdentifier: MealsCell.identifier)
     }
-    
-
-    
 }
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -70,6 +59,15 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         }
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == mealCollectionView {
+            let controller = MealDetailsViewController.instantiate()
+            controller.meals = collectionView == mealCollectionView ? meals[indexPath.row] : nil
+            navigationController?.pushViewController(controller, animated: true)
+        }
+    }
 }
+    
+    
+
 

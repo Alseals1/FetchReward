@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="160" height="500"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="equalSpacing" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="5au-r8-VnX">
-                                <rect key="frame" x="8" y="8" width="144" height="484"/>
+                                <rect key="frame" x="8" y="8" width="144" height="477"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aC-UP-TJq">
                                         <rect key="frame" x="0.0" y="0.0" width="144" height="20.5"/>
@@ -30,9 +30,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kJ1-Ew-Rs8">
-                                        <rect key="frame" x="0.0" y="22.5" width="144" height="461.5"/>
+                                        <rect key="frame" x="0.0" y="27" width="144" height="450"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="461.5" id="adL-ce-Fq5"/>
+                                            <constraint firstAttribute="height" constant="450" id="adL-ce-Fq5"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
@@ -40,7 +40,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="5au-r8-VnX" secondAttribute="bottom" constant="8" id="FiZ-aA-JT3"/>
+                            <constraint firstAttribute="bottom" secondItem="5au-r8-VnX" secondAttribute="bottom" constant="15" id="FiZ-aA-JT3"/>
                             <constraint firstItem="5au-r8-VnX" firstAttribute="top" secondItem="v1c-Ak-Cf8" secondAttribute="top" constant="8" id="L6e-dj-rug"/>
                             <constraint firstItem="5au-r8-VnX" firstAttribute="leading" secondItem="v1c-Ak-Cf8" secondAttribute="leading" constant="8" id="NAw-XJ-D6X"/>
                             <constraint firstAttribute="width" constant="160" id="Zk6-Em-wm6"/>
@@ -61,6 +61,7 @@
             <connections>
                 <outlet property="mealImageView" destination="kJ1-Ew-Rs8" id="VlH-eR-hML"/>
                 <outlet property="mealTitleLbl" destination="3aC-UP-TJq" id="KOr-c2-D5K"/>
+                <outlet property="mealView" destination="v1c-Ak-Cf8" id="Msd-BK-rmM"/>
             </connections>
             <point key="canvasLocation" x="222.46376811594206" y="159.70982142857142"/>
         </collectionViewCell>

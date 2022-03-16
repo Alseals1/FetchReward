@@ -16,6 +16,8 @@
 		C628A43527DA42810033A2A5 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C628A43327DA42810033A2A5 /* CategoryCell.xib */; };
 		C628A43827DA43380033A2A5 /* MealCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C628A43727DA43380033A2A5 /* MealCategory.swift */; };
 		C69A75EF27E2444600CCAC69 /* MealDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69A75EE27E2444600CCAC69 /* MealDetailsViewController.swift */; };
+		C69A75F227E248E300CCAC69 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69A75F127E248E300CCAC69 /* UIViewController.swift */; };
+		C69A75F427E2528A00CCAC69 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69A75F327E2528A00CCAC69 /* API.swift */; };
 		C6FE26BE27D7BE3C005EE7BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FE26BD27D7BE3C005EE7BF /* AppDelegate.swift */; };
 		C6FE26C027D7BE3C005EE7BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FE26BF27D7BE3C005EE7BF /* SceneDelegate.swift */; };
 		C6FE26C527D7BE3C005EE7BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FE26C327D7BE3C005EE7BF /* Main.storyboard */; };
@@ -33,6 +35,8 @@
 		C628A43327DA42810033A2A5 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 		C628A43727DA43380033A2A5 /* MealCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCategory.swift; sourceTree = "<group>"; };
 		C69A75EE27E2444600CCAC69 /* MealDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailsViewController.swift; sourceTree = "<group>"; };
+		C69A75F127E248E300CCAC69 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		C69A75F327E2528A00CCAC69 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		C6FE26BA27D7BE3C005EE7BF /* FetchRewardProdject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchRewardProdject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6FE26BD27D7BE3C005EE7BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6FE26BF27D7BE3C005EE7BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +110,22 @@
 			path = MealsCollectionViewCells;
 			sourceTree = "<group>";
 		};
+		C69A75F027E248BD00CCAC69 /* ViewController+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C69A75F127E248E300CCAC69 /* UIViewController.swift */,
+			);
+			path = "ViewController+Extensions";
+			sourceTree = "<group>";
+		};
+		C69A75F527E2529400CCAC69 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				C69A75F327E2528A00CCAC69 /* API.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
 		C6FE26B127D7BE3C005EE7BF = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +145,8 @@
 		C6FE26BC27D7BE3C005EE7BF /* FetchRewardProdject */ = {
 			isa = PBXGroup;
 			children = (
+				C69A75F527E2529400CCAC69 /* NetworkManager */,
+				C69A75F027E248BD00CCAC69 /* ViewController+Extensions */,
 				C628A43627DA43210033A2A5 /* Models */,
 				C628A42F27DA41FB0033A2A5 /* Customs */,
 				C6FE26BD27D7BE3C005EE7BF /* AppDelegate.swift */,
@@ -212,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C69A75F427E2528A00CCAC69 /* API.swift in Sources */,
 				C6093E4827E22D3A00F5028D /* Meal.swift in Sources */,
 				C6FE26BE27D7BE3C005EE7BF /* AppDelegate.swift in Sources */,
 				C69A75EF27E2444600CCAC69 /* MealDetailsViewController.swift in Sources */,
@@ -220,6 +243,7 @@
 				C6093E4B27E2338F00F5028D /* MealsCell.swift in Sources */,
 				C628A42E27DA3FF10033A2A5 /* HomeViewController.swift in Sources */,
 				C6093E4227E22A4200F5028D /* CardView.swift in Sources */,
+				C69A75F227E248E300CCAC69 /* UIViewController.swift in Sources */,
 				C628A43427DA42810033A2A5 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

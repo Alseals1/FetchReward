@@ -161,7 +161,7 @@
         <!--Meal Details View Controller-->
         <scene sceneID="lyT-pG-wF9">
             <objects>
-                <viewController id="IxD-NM-mh0" customClass="MealDetailsViewController" customModule="FetchRewardProdject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MealDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IxD-NM-mh0" customClass="MealDetailsViewController" customModule="FetchRewardProdject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VOi-S7-Adb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,18 +178,18 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cjp-Ee-T9L">
-                                        <rect key="frame" x="8" y="56" width="358" height="400"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="400" id="Obu-uN-kCw"/>
-                                        </constraints>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZT-HO-v0T">
                                         <rect key="frame" x="10" y="476" width="354" height="114"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cjp-Ee-T9L">
+                                        <rect key="frame" x="8" y="59" width="358" height="400"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="400" id="Obu-uN-kCw"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -201,8 +201,8 @@
                                     <constraint firstItem="o4x-G1-CV6" firstAttribute="top" secondItem="Byp-fd-AAR" secondAttribute="top" constant="8" id="JRG-En-76Y"/>
                                     <constraint firstItem="BZT-HO-v0T" firstAttribute="leading" secondItem="Byp-fd-AAR" secondAttribute="leading" constant="10" id="N0u-eY-oT5"/>
                                     <constraint firstItem="Cjp-Ee-T9L" firstAttribute="leading" secondItem="Byp-fd-AAR" secondAttribute="leading" constant="8" id="c0e-HQ-noG"/>
-                                    <constraint firstItem="BZT-HO-v0T" firstAttribute="top" secondItem="Cjp-Ee-T9L" secondAttribute="bottom" constant="20" id="fc7-Iv-PSc"/>
-                                    <constraint firstItem="Cjp-Ee-T9L" firstAttribute="top" secondItem="o4x-G1-CV6" secondAttribute="bottom" constant="5" id="kYc-Ee-2d1"/>
+                                    <constraint firstItem="BZT-HO-v0T" firstAttribute="top" secondItem="Cjp-Ee-T9L" secondAttribute="bottom" constant="17" id="fc7-Iv-PSc"/>
+                                    <constraint firstItem="Cjp-Ee-T9L" firstAttribute="top" secondItem="o4x-G1-CV6" secondAttribute="bottom" constant="8" id="kYc-Ee-2d1"/>
                                     <constraint firstItem="o4x-G1-CV6" firstAttribute="leading" secondItem="Byp-fd-AAR" secondAttribute="leading" constant="8" id="oNf-PM-f6g"/>
                                 </constraints>
                             </view>

@@ -1,10 +1,3 @@
-//
-//  MealDetailsViewController.swift
-//  FetchRewardProdject
-//
-//  Created by Alandis Seals on 3/16/22.
-//
-
 import UIKit
 
 class MealDetailsViewController: UIViewController {
@@ -12,13 +5,15 @@ class MealDetailsViewController: UIViewController {
     @IBOutlet weak var mealImageView: UIImageView!
     @IBOutlet weak var mealDetailLbl: UILabel!
     
+    var meals: Meal!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        populateMeals()
     }
     
-
-   
-
+    private func populateMeals() {
+        mealLbl.text = meals.name
+        mealImageView.image = meals.image
+    }
 }
